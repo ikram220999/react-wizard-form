@@ -39,14 +39,15 @@ const FormHandler = () => {
   return (
     <>{
 
-      (turn == 0) ? (<><Form /></>)
-        : (turn == 1) ? (<><Form2 /></>)
-          : (turn == 2) ? (<><Form3 /></>)
+      (turn == 0) ? (<><Form input={input} /></>)
+        : (turn == 1) ? (<><Form2 input={input} /></>)
+          : (turn == 2) ? (<><Form3 input={input} /></>)
             : (<>done</>)
 
     }
       <button onClick={prev}>prev</button>
       <button onClick={next}>next</button>
+      // asdasd
     </>
   )
 }

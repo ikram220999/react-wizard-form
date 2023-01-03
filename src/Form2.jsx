@@ -1,6 +1,6 @@
 import React from "react"
 
-const Form2 = () => {
+const Form2 = (props) => {
 
   return (
     <>
