@@ -5,7 +5,7 @@ const Form = (props) => {
   return (
     <>
       <div>
-        <input type="name" placeholder="name"></input>
+        <input type="name" placeholder="name" name="name" onChange={e => props.updateInput(e)}></input>
       </div>
     </>
   )

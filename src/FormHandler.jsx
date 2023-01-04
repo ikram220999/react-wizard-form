@@ -39,10 +39,10 @@ const FormHandler = () => {
   return (
     <>{
 
-      (turn == 0) ? (<><Form input={input} /></>)
-        : (turn == 1) ? (<><Form2 input={input} /></>)
-          : (turn == 2) ? (<><Form3 input={input} /></>)
-            : (<>done</>)
+      (turn == 0) ? (<><Form updateInput={updateInput} /></>)
+        : (turn == 1) ? (<><Form2 updateInput={updateInput} /></>)
+          : (turn == 2) ? (<><Form3 updateInput={updateInput} /></>)
+            : (<>{input.name} .. {input.email} .. {input.password}</>)
 
     }
       <button onClick={prev}>prev</button>
